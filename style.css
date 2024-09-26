@@ -1,0 +1,136 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows:1fr 1.5fr;
+  gap: 20px;
+  height:100%;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgb(186, 183, 183);
+}
+
+body {
+  color: rgb(239, 244, 248);
+}
+.item {
+  background-color: rgba(4, 4, 4, 0.762);
+  margin: 0px;
+}
+
+.box1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.834);
+}
+
+.home-page {
+  color: rgb(218, 121, 121);
+  padding-bottom: 20px;
+}
+
+.box2 {
+  display: flex;
+  gap: 100px;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-top: 20px;
+  background-color: rgba(0, 0, 0, 0.863);
+}
+
+.item-a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 600px;
+  padding-left: 10px;
+  background-color: rgba(134, 208, 180, 0.258);
+  border-radius: 15px;
+}
+.item-a > img {
+  height: 150px;
+  margin-top: 0;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  border-radius: 25%;
+}
+
+.item-a1{
+    padding:20px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.item-b {
+  max-width: 400px;
+  padding-right: 10px;
+  background-color: rgba(56, 98, 177, 0.642);
+  border-radius: 15px;
+  padding: 20px;
+}
+.box1-img {
+  height: 100px;
+  justify-content: center;
+  padding-top: 10px;
+  border-radius: 50%;
+}
+.admission1 {
+  color: rgb(153, 241, 220);
+}
+.admission2 {
+  color: rgb(249, 230, 163);
+}
+p {
+  text-align: center;
+  color: rgba(248, 247, 245, 0.96);
+  text-decoration: none;
+}
+a {
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  padding:20px;
+}
+@keyframes blinkWord {
+  0% {
+    visibility: visible;
+  }
+  50% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+
+.blink-word {
+  animation: blinkWord 1s infinite;
+  color: rgb(124, 124, 202);
+}
+
+@media (max-width: 600px) {
+  .item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+  }
+  .container{
+    height:100vh;
+  }
+  h1{
+    font-size: 1rem;
+  }
+  h2{
+    font-size: 1rem;
+  }
+  p{
+    font-size: 0.75rem;
+  }
+}
